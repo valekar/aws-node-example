@@ -1,7 +1,7 @@
 import "./util/config";
 import express, { Request, Response } from "express";
 import { NOT_FOUND } from "http-status-codes";
-import BaseRouter from "./routes/baseRouter";
+import BaseRouter from "./routes/base.router";
 import * as CONSTANTS from "./util/constants";
 
 //load the environment file
