@@ -19,6 +19,9 @@ app.get("*", (req: Request, res: Response) => {
   res.status(NOT_FOUND).json({ message: CONSTANTS.COULD_NOT_FIND_RESOURCE });
 });
 
-app.listen(port, () => {
+//this server export is used in tests
+export const server = app.listen(port, () => {
   console.log(CONSTANTS.SERVER_STARTED + port);
 });
+//this app export is used in test tests
+export default app;
