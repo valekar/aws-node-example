@@ -1,0 +1,14 @@
+{
+  "name": "aws-node-example",
+  "version": "0.0.1",
+  "description": "This is an example for connecting aws with nodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Srinivas Prashanth Valekar(https://github.com/valekar)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
