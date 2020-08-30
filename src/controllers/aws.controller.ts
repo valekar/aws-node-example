@@ -8,7 +8,7 @@ import * as CONSTANTS from "../util/constants";
  Route : /regions
  Description : controller for getting all regions
 */
-export const getRegions = async (req: Request, res: Response) => {
+export const getRegions = async (_: Request, res: Response) => {
   try {
     const ec2 = buildEC2Object("");
     const result = await ec2.describeRegions({}).promise();
