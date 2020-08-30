@@ -1,3 +1,6 @@
+/**
+ * File for aws route controller logic
+ */
 import { Request, Response } from "express";
 import { INTERNAL_SERVER_ERROR, OK } from "http-status-codes";
 import buildEC2Object, { checkNull } from "../util/shared";

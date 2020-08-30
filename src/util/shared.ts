@@ -1,3 +1,6 @@
+/**
+ * Util functions for building AWS specific services
+ */
 import { config } from "./config";
 import AWS from "aws-sdk";
 

@@ -1,3 +1,6 @@
+/**
+ * Starting point - this is where initialization occurs
+ */
 import "./util/config";
 import express, { Request, Response } from "express";
 import { NOT_FOUND } from "http-status-codes";

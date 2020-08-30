@@ -1,3 +1,6 @@
+/**
+ * Spec file for test util functions in shared.ts file
+ */
 import buildEC2Object, { checkNull } from "../src/util/shared";
 import { config } from "../src/util/config";
 

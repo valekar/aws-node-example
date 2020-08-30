@@ -1,3 +1,6 @@
+/**
+ * Spec file for testing routes
+ */
 import app, { server } from "../src/index";
 import supertest, { Response, SuperTest, Test } from "supertest";
 import { OK, NOT_FOUND } from "http-status-codes";

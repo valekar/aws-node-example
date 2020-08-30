@@ -1,3 +1,6 @@
+/**
+ * Configuration file
+ */
 import dotenv from "dotenv";
 import { COULD_NOT_LOAD_ENVIRONMENT } from "./constants";
 

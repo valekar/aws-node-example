@@ -1,3 +1,6 @@
+/**
+ * AWS routes
+ */
 import { Router } from "express";
 import * as awsController from "../controllers/aws.controller";
 

@@ -1,4 +1,4 @@
-/* 
+/**  
     BaseRouter - This file contains all the routes of the application
  */
 import { Router } from "express";
