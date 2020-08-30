@@ -11,11 +11,13 @@
   "author": "Srinivas Prashanth Valekar(https://github.com/valekar)",
   "license": "MIT",
   "dependencies": {
+    "aws-sdk": "^2.742.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "http-status-codes": "^2.1.2"
   },
   "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
     "@types/express": "^4.17.7",
     "@types/node": "^14.6.2",
     "nodemon": "^2.0.4",

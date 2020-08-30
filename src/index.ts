@@ -1,17 +1,12 @@
+import "./util/config";
 import express, { Request, Response } from "express";
-import dotenv from "dotenv";
 import { NOT_FOUND } from "http-status-codes";
 import BaseRouter from "./routes/baseRouter";
 import * as CONSTANTS from "./util/constants";
 
 //load the environment file
-const loaded = dotenv.config({ path: "./env/development.env" });
-let port = 3000;
-if (loaded.error) {
-  console.log(CONSTANTS.COULD_NOT_LOAD_ENVIRONMENT);
-} else {
-  port = Number(process.env.PORT);
-}
+let port = Number(process.env.PORT) || 3000;
+
 //initialize the express application
 const app = express();
 //handle PUT/POST requests
