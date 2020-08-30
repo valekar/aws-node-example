@@ -42,6 +42,7 @@ export const getVpcs = async (req: Request, res: Response) => {
     });
   }
 };
+
 /*
     Route : /regions/:regionId/vpcs/:vpcId/subnets
     Description : controller getting all subnets for given region id and vpc id
@@ -53,8 +54,17 @@ export const getSubnets = async (req: Request, res: Response) => {
       throw Error(CONSTANTS.INVALID_REGION_ID_AND_VPC_ID);
     }
 
-    const ec2 = buildEC2Object();
-    const result = await ec2.describeSubnets({}).promise();
+    const params = {
+      Filters: [
+        {
+          Name: "vpc-id",
+          Values: [vpcId],
+        },
+      ],
+    };
+
+    const ec2 = buildEC2Object(regionId);
+    const result = await ec2.describeSubnets(params).promise();
     return res.status(OK).json(result);
   } catch (err) {
     return res.status(INTERNAL_SERVER_ERROR).json({
