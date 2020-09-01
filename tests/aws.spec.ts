@@ -9,9 +9,9 @@ import { COULD_NOT_FIND_RESOURCE } from "../src/util/constants";
 describe("AWSRouter", () => {
   let agent: SuperTest<Test>;
 
-  const getRegions = "/api/aws/regions";
-  const getVpcs = "/api/aws/regions/eu-west-2/vpcs";
-  const getSubnets = "/api/aws/regions/eu-north-1/vpcs/vpc-0111b368/subnets";
+  const getRegions = "/api/v1/aws/regions";
+  const getVpcs = "/api/v1/aws/regions/eu-west-2/vpcs";
+  const getSubnets = "/api/v1/aws/regions/eu-north-1/vpcs/vpc-0111b368/subnets";
   const randomURL = "/random/string";
 
   beforeAll((done) => {
