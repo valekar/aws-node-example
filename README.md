@@ -10,25 +10,31 @@ This project is an example for showing the usage of AWS services with expressJS.
 
 1. Make sure you have added necessary credentials (API Secret and API client from your AWS account) in your system. It should be present in your home directory - **~/.aws/credentials** file
 
-2. Clone the repository and go to the directory
+2. Clone the repository
+
+   ```bash
+   git clone https://github.com/valekar/aws-node-example.git
+   ```
+
+3. Extract and go the root directory
 
    ```bash
    cd aws-node-example
    ```
 
-3. Install node modules
+4. Install node modules
 
    ```bash
    npm install
    ```
 
-4. Run the application in **development** mode. Run the following command
+5. Run the application in **development** mode. Run the following command
 
    ```bash
    npm run start:dev
    ```
 
-5. Now open the swagger UI to test the APIs. You can access the screen by using - <http://localhost:3000/api-docs/> . Please make sure to run this application in the **development mode** . Use the above **npm** command to the application in development mode.
+6. Now open the swagger UI to test the APIs. You can access the screen by using - <http://localhost:3000/api-docs/> . Please make sure to run this application in the **development mode** . Use the above **npm** command to the application in development mode.
 
 ## Other Commands
 
