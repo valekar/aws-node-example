@@ -1,6 +1,6 @@
 # An AWS example for Node, express
 
-This project is an example for showing the usage of AWS services with expressJS. This application is written in Typescript. This projects has 3 following APIs
+This project is an example for showing the usage of AWS services with expressJS. This application is written in Typescript. This project has 3 following APIs
 
 1. Get Regions - Get all the regions where AWS is supported.
 2. Get VPCs - Get all the virtual private clouds in a given region.
